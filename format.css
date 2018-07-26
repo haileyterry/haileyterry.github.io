@@ -1,8 +1,24 @@
 body {text-align: center;}
 body {background-color: 	rgb(230,230,250);}
+.container {
+    position: relative;
+    text-align: center;
+    color: rgb(102, 153, 153);
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
   h1{
-    font-family: 'Merienda', cursive;
-    font-size: 30pt;
+    /*--font-family: 'Merienda', cursive;*/
+    font-family: 'Contrail One', cursive;
+    font-size: 80pt;
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
     }
   p{
     font-family: 'Sunflower', sans-serif;
@@ -18,30 +34,34 @@ h4{
     font-size: 12pt;
     }
 
-.topnav {
-        background-color: #333;
-        overflow: hidden;
-    }
+.music{
+  text-align: left;
+}
 
-    /* Style the links inside the navigation bar */
-    .topnav a {
-        float: left;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-    }
+#catphotos{
+  border:1px black solid;
+  width:600px;
+  height:400px;
+  margin: auto;
+  display: block;
+}
 
-    /* Change the color of links on hover */
-    .topnav a:hover {
-        background-color: #ddd;
-        color: black;
-    }
+.slide1 img{
+  width: 600px;
+  height: 400px;
+}
+    /* Add a black background color to the top navigation */
+.topnav{
+  background-color: black;
+  overflow: hidden;
+}
 
-    /* Add a color to the active/current link */
-    .topnav a.active {
-        background-color: #4CAF50;
-        color: white;
-    }
-
+.topnav a {
+  float:left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration:none;
+  font-family: 'Kanit', sans-serif;
+  font-size: 17px;
+}
